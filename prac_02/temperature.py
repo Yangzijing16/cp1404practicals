@@ -25,5 +25,4 @@ Q - Quit"""
         choice = input(">>> ").upper()
     print("Thank you.")
 
-if __name__ == "__main__":
-    main()
+main()
