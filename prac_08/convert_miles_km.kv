@@ -1,0 +1,23 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+                on_press: app.handle_increment(1)
+            Button:
+                text: 'Down'
+                on_press: app.handle_increment(-1)
+        TextInput:
+            id: miles_input
+            text: ''
+            on_text: app.handle_text(self.text)
+    Button:
+        text: 'Convert'
+        on_press: app.handle_convert()
+    Label:
+        id: output_label
+        text: app.km_output
+        color: (1, 1, 0, 1)
