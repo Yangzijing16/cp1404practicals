@@ -21,7 +21,7 @@ class DynamicLabelsApp(App):
         Returns:
             The root widget loaded from 'dynamic_labels.kv'.
         """
-        self.title = "动态标签"
+        self.title = "dynamic labels"
         self.root = Builder.load_file('dynamic_labels.kv')
         for name in self.names:
             label = Label(text=name)
